@@ -1,0 +1,116 @@
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+nav a:hover {
+color: #e03636;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #e03636;
+    
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+nav {
+    font-family: Subrage;
+    float: right;
+    
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 32px;
+
+    position: relative;
+}
+
+.sectionimg {
+    margin-top: 70px;
+}
+
+
+body {
+    margin: 0;
+    background: #c3fdfa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-image: url(../img/backgroundpattern.svg);
+}
+
+main {
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img, video {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+    width: 100px;
+}
+header {
+    background: #6b0d0d;
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1 {
+    font-family: Russo One;
+    font-size: 40px;
+    color: #6b0d0d;
+}
+
+h2 {
+    font-family: Averia Serif Libre;
+    color: #6b0d0d;
+}
+
+p {
+    font-family: Overpass;
+    max-width: 650px;
+    color: #6b0d0d;
+}
+
+
+@font-face {
+    font-family: Subrage;
+    src: url(../fonts/Subrage\ Font\ DEMO.ttf);
+}
+
